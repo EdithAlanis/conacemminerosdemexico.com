@@ -1,0 +1,24 @@
+CONACEM – MINEROS DE MÉXICO
+Sitio web con diseño aprobado, formularios privados y cinco cuentas administrativas de permisos iguales.
+
+PARA PROBAR EN UNA COMPUTADORA
+1. Instalar Node.js 20 o superior.
+2. Abrir una terminal en esta carpeta.
+3. Ejecutar: npm install
+4. Copiar .env.example como .env.
+5. En .env configurar SESSION_SECRET (cadena aleatoria de 32+ caracteres), cinco correos reales en ADMIN_EMAILS y una INITIAL_ADMIN_PASSWORD temporal de 12+ caracteres.
+6. Ejecutar: npm start
+7. Abrir http://localhost:3000
+8. Entrar con cualquiera de los cinco correos y la contraseña temporal. Cada administrador debe cambiar su contraseña inmediatamente. Quitar INITIAL_ADMIN_PASSWORD de .env después del primer inicio.
+
+PARA PUBLICAR
+- Contratar o configurar el dominio conacemminerosdemexico.com.
+- Publicar en alojamiento Node.js con HTTPS, NODE_ENV=production y almacenamiento persistente para DATABASE_PATH. No usar un disco efímero para SQLite.
+- Configurar cinco correos reales y claves privadas sin compartirlas.
+- Completar el aviso de privacidad conforme a la normativa mexicana ANTES de captar datos personales reales.
+- Confirmar derechos de uso de las imágenes, emblemas y la leyenda "Hecho en México 999 – En proceso".
+- El emblema es una propuesta gráfica; no constituye certificación, ley de pureza ni prueba de cotización bursátil.
+- Configurar respaldos cifrados y política de conservación y eliminación de registros.
+- No subir .env ni el directorio data a repositorios públicos.
+
+IMPORTANTE: Este ZIP contiene el código completo, NO significa que el dominio esté publicado. Los formularios solo reciben datos cuando se ejecuta el servidor y la base de datos. Para cinco cuentas se deben definir cinco correos distintos.
