@@ -1,0 +1,10 @@
+CONACEM - Activación
+1. Este paquete incluye formularios conectados al servidor, folios consecutivos y administración privada.
+2. Instalar Node.js 20 o superior, ejecutar npm install y configurar .env usando env.example como plantilla.
+3. No compartir .env, contraseñas SMTP ni subirlas a GitHub. Usar contraseña de aplicación Gmail (no contraseña normal), si está disponible en la cuenta.
+4. Configurar cinco correos reales diferentes en ADMIN_EMAILS, INITIAL_ADMIN_PASSWORD temporal y SESSION_SECRET aleatorio de 32+ caracteres.
+5. Ejecutar npm start y abrir http://localhost:3000 (no abrir index.html con file:///).
+6. Para publicación real: hosting Node.js con HTTPS, base de datos SQLite en disco persistente y dominio configurado.
+7. Verificar aviso de privacidad real antes de captar datos. Revisar contenido y derechos de las imágenes.
+8. Los registros se guardan antes de intentar enviar el correo; si SMTP falla, queda registro pero el correo podría no llegar. Revisar logs del servidor.
+9. Hacer una prueba real de envío y confirmar correo recibido antes de anunciar el servicio como activo.
